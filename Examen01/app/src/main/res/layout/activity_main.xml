@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/top_background">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="184dp"
+                    android:layout_height="153dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/top_pic" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MontoyaShop"
+                    android:textColor="#ffffff"
+                    android:textSize="40sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView8"
+                    app:layout_constraintHorizontal_bias="0.47"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.387" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                    <EditText
+                        android:id="@+id/editTextText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_background"
+                        android:drawableStart="@drawable/search_icon"
+                        android:drawablePadding="15dp"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:hint="Searching for"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:textColor="#070707"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="10dp">
+
+                        <ImageButton
+                            android:id="@+id/Notification"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="Descripción del botón"
+                            android:background="@android:color/transparent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/bell" />
+
+
+
+                        <ImageView
+                            android:id="@+id/RedAlert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"
+                            app:layout_constraintEnd_toEndOf="@+id/Notification"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/red_circle" />
+
+                        <TextView
+                            android:id="@+id/txAlert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/RedAlert"
+                            app:layout_constraintEnd_toEndOf="@+id/RedAlert"
+                            app:layout_constraintStart_toStartOf="@+id/RedAlert"
+                            app:layout_constraintTop_toTopOf="@+id/RedAlert" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="32dp"
+                android:background="@drawable/white_background"
+                android:elevation="36dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/blue_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/blue_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView10"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                app:srcCompat="@drawable/categorias" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/blue_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/blue_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView11"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                app:srcCompat="@drawable/ic_1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/blue_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/blue_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView12"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                app:srcCompat="@drawable/icons8_android_64" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/blue_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/blue_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                app:srcCompat="@drawable/monitor" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/blue_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/blue_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                app:srcCompat="@drawable/baloncesto" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/blue_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/blue_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView15"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                app:srcCompat="@drawable/house_plants" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/blue_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/blue_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                app:srcCompat="@drawable/carro" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/blue_background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/blue_background"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView9"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="2dp"
+                                app:srcCompat="@drawable/juguetes" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".0015"
+                    android:text="new offers"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".0015"
+                    android:text="See All"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:context=".MainActivity">
+
+                        <ImageView
+                            android:id="@+id/product1"
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/flechaa" />
+
+                        <TextView
+                            android:id="@+id/product11"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_title_news"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Collar de Flecha de Acero Inoxidable $50.00"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/removeFeeder"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:context=".MainActivity">
+
+                        <ImageView
+                            android:id="@+id/producto2"
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ryzen" />
+
+                        <TextView
+                            android:id="@+id/product22"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_title_news"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Procesador AMD Ryzen 5 $5000.00"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/removeFeeder"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:context=".MainActivity">
+
+                        <ImageView
+                            android:id="@+id/product3"
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/adidas" />
+
+                        <TextView
+                            android:id="@+id/product33"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_title_news"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Tenis Adidas $1500.00"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/removeFeeder"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:context=".MainActivity">
+
+                        <ImageView
+                            android:id="@+id/product4"
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/mouse" />
+
+                        <TextView
+                            android:id="@+id/product5"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_title_news"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Mouse Inalambrico $300.00"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/removeFeeder"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/product6"
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/tenis_nike" />
+
+                        <TextView
+                            android:id="@+id/product66"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_title_news"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Tenis Nike $1500.00"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/removeFeeder"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/buying"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_weight=".0015"
+                    android:text="Keep buying"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/seeAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".0015"
+                    android:text="See All"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:context=".MainActivity">
+
+                        <ImageView
+                            android:id="@+id/venta1"
+                            android:layout_width="100dp"
+                            android:layout_height="160dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/escritorio" />
+
+                        <TextView
+                            android:id="@+id/venta11"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_title_news"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Escritorio de Madera $2000.00"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/removeFeeder"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:context=".MainActivity">
+
+                        <ImageView
+                            android:id="@+id/venta2"
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/madkat" />
+
+                        <TextView
+                            android:id="@+id/venta22"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_title_news"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Sudadera MadKat $800.00"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/removeFeeder"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:context=".MainActivity">
+
+                        <ImageView
+                            android:id="@+id/venta3"
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/bunny" />
+
+                        <TextView
+                            android:id="@+id/venta33"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_title_news"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Playera de psycho Bunny $1200.00"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/removeFeeder"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:context=".MainActivity">
+
+                        <ImageView
+                            android:id="@+id/venta4"
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/cabinet" />
+
+                        <TextView
+                            android:id="@+id/venta44"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_title_news"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="Gabinete de madera Blanca $2500.00"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/removeFeeder"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:context=".MainActivity">
+
+                        <ImageView
+                            android:id="@+id/venta5"
+                            android:layout_width="120dp"
+                            android:layout_height="160dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/timemachine" />
+
+                        <TextView
+                            android:id="@+id/venta55"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_title_news"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:text="coleccionable Maquina del Tiempo $1000.00"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/removeFeeder"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/btn_1" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Home"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/btn_2" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Settings"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/btn_3" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Favorites"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/btn_4" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Card"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/btn_5" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

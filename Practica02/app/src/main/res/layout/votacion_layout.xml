@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="412dp"
+        android:layout_height="177dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp">
+
+        <TextView
+            android:id="@+id/nombre1"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="41dp"
+            android:layout_toStartOf="@+id/botonVotar3"
+            android:text="          Axel Felix" />
+
+        <Button
+            android:id="@+id/botonVotar1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/nombre1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="162dp"
+            android:text="Votar"
+            android:textColor="#6d77fb"
+            app:strokeColor="#6d77fb" />
+
+        <TextView
+            android:id="@+id/nombre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nombre1"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="18dp"
+            android:layout_toStartOf="@+id/botonVotar1"
+            android:text="Francisco Escobedo" />
+
+        <Button
+            android:id="@+id/botonVotar2"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/nombre2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="162dp"
+            android:text="Votar"
+            android:textColor="#6d77fb"
+            app:strokeColor="#6d77fb" />
+
+        <TextView
+            android:id="@+id/nombre3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nombre2"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="82dp"
+            android:layout_toStartOf="@+id/botonVotar2"
+            android:text="Claudia" />
+
+        <Button
+            android:id="@+id/botonVotar3"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/nombre3"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-94dp"
+            android:layout_marginRight="161dp"
+            android:text="Votar"
+            android:textColor="#6d77fb"
+            app:strokeColor="#6d77fb" />
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
