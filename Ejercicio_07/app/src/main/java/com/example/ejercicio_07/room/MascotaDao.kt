@@ -12,7 +12,7 @@ interface MascotaDao {
     fun getAllMascotas() : List<Mascota>
 
     @Query("SELECT * FROM mascota WHERE id=:idMascota")
-    fun getMascotaById(idMascota: Int)
+    fun getMascotaById(idMascota: Int):Mascota
 
     @Insert
     fun newMascota(mascota: Mascota)
